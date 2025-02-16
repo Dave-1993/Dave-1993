@@ -1,0 +1,198 @@
+// This file contains the custom styles for the portfolio website, written in SCSS.
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+// Global Styles
+body {
+    font-family: $font-stack;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Q0XDDGD8byWPfM7sCNin0rRTBp-XV5-9pw&s');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 10px 0;
+    background-color: $primary-color;
+
+    a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .nav-item-div {
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: $primary-color;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration-color: #f4f4f4;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.container {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+    background-color: $secondary-color;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: white;
+
+    .card-header {
+        background-color: $secondary-color;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-body {
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    }
+
+    .card-body2 {
+        background-color: #F4F4F4d4;
+        text-align: center;
+        padding: 20px;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.form-control {
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.no-resize {
+    resize: none;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: #dea412;
+        }
+    }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+    .nav-item-div {
+        margin: 2px;
+        padding: 3px 5px;
+    }
+
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+
+    .card-header {
+        padding: 1rem;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    nav.sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
