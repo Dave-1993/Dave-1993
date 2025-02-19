@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Q0XDDGD8byWPfM7sCNin0rRTBp-XV5-9pw&s");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -145,6 +144,32 @@ nav .nav-item-div:hover {
 }
 .footer a:hover {
   color: #dea412;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.main-layout .top-div {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.main-layout .bottom-divs {
+  display: flex;
+  gap: 20px;
+}
+.main-layout .bottom-divs .left-div, .main-layout .bottom-divs .right-div {
+  flex: 1;
+  background-color: #2ecc71;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
