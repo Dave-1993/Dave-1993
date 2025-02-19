@@ -1,10 +1,9 @@
-// This file contains the custom styles for the portfolio website, written in SCSS.
-
 // Variables
-$primary-color: #3498db;
+$primary-color: #91bf27;
 $secondary-color: #2ecc71;
+$primary-gradient: linear-gradient(45deg, #cab82b, #1a8c25);
 $font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$background-color: #f4f4f4;
+$background-color: #dfdfdf;
 $text-color: #333;
 
 // Global Styles
@@ -23,7 +22,7 @@ body {
 }
 
 header {
-    background-color: $primary-color;
+    background: $primary-gradient;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -32,8 +31,9 @@ header {
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: $primary-color;
-
+    background: $primary-gradient;
+    text-align: right;
+    display: flex;
     a {
         color: white;
         margin: 0 15px;
@@ -149,18 +149,19 @@ nav {
     }
 }
 
-.footer {
+.div-footer {
     background-color: $primary-color;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 20;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 60px;
 
     a {
-        color: white;
-        margin: 0 10px;
+        color: rgb(255, 255, 255);
+        margin: 10px;
         font-size: 1.5rem;
 
         &:hover {
