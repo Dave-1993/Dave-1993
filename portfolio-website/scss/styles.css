@@ -1,3 +1,4 @@
+@import '~font-awesome/css/font-awesome.min.css';
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #dfdfdf;
@@ -54,7 +55,7 @@ nav .nav-item-div:hover {
   flex: 1;
   margin-top: 20px;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -130,8 +131,22 @@ nav .nav-item-div:hover {
   background-color: #2ecc71;
 }
 
+.footstyle {
+  background-color: #000264;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+}
+.footstyle:i {
+  color: white;
+}
+
 .div-footer {
-  background-color: #91bf27;
+  background-color: white;
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 30px 20;
@@ -141,7 +156,7 @@ nav .nav-item-div:hover {
   margin-top: 60px;
 }
 .div-footer a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0) !important;
   margin: 10px;
   font-size: 1.5rem;
 }
