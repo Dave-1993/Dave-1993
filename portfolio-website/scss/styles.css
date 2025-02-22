@@ -2,7 +2,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: linear-gradient(to top, #000264, rgba(52, 236, 187, 0.7529411765));
-  color: #333;
+  color: #000000;
   margin: 0;
   padding: 0;
   display: flex;
@@ -67,6 +67,9 @@ nav .nav-item-div:hover {
   margin-right: 10px;
   color: rgb(104, 230, 247);
 }
+.mx-10:hover {
+  color: #000264;
+}
 
 .CV {
   text-align: center;
@@ -77,7 +80,7 @@ nav .nav-item-div:hover {
   background-clip: text;
   color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #000000;
 }
 
 .portfolio {
