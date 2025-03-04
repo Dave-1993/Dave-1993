@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #199675;
+$primary-color: #77aed580;
 $secondary-color: #000264;
 $primary-gradient: linear-gradient(45deg, #34ecbbc0, #000264);
 $secondary-gradient: linear-gradient(to top, #000264, #34ecbbc0);
@@ -59,7 +59,7 @@ nav {
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-            background-color: $primary-color;
+            background-color: #199675;
         }
     }
 }
@@ -68,7 +68,49 @@ nav {
     flex: 1;
     margin-top: 20px;
     padding: 20px;
-    background-color: rgb(73, 183, 200);
+    background-color: $primary-color;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.container3 {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    background-image: url(https://www.liligo.it/magazine-viaggiatore/wp-content/uploads/sites/45/2019/03/Napoli-copertina.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 365px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.container4 {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    background-image: url(https://dutchuncles.in/wp-content/uploads/2021/02/How-is-agri-tech-jpg-1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 365px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.container5 {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    background-image: url(https://www.4stars.it/blog/wp-content/uploads/2022/02/CV-PERFETTO-2023.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 365px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: black;
@@ -84,7 +126,8 @@ nav {
 }
 
 .CV {
-    text-align: center;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
     margin: 20px;
     font-size: 3rem;
     font-weight: bold;
@@ -92,7 +135,25 @@ nav {
     background-clip: text; 
     color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    color: $text-color
+    color: $text-color;
+    text-decoration: underline;
+    text-decoration-color: #f4f4f4;
+}
+
+.container-wrapper {
+    display: flex;
+    flex: 1;
+    gap: 20px; 
+    align-items: flex-start; 
+    align-items: stretch; 
+}
+
+.work-experience {
+    flex: 3; 
+}
+
+.skills {
+    flex: 1; 
 }
 
 .portfolio {
@@ -100,13 +161,16 @@ nav {
     margin: 20px;
 }
 
-.job {
+.job1 {
     list-style: none;
     margin: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .job2 {
     list-style: none;
+    margin: 20px;
     text-align: center;
 }
 
@@ -139,19 +203,20 @@ nav {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.174);
 
      .card-header {
-        background-color: $primary-color;
-        color: rgb(255, 255, 255);
+        background-color: rgba(70, 245, 210, 0.444);
+        color: rgb(0, 0, 0);
         text-align: center;
         padding: 10px;
         border-radius: 5px 5px 0 0;
+        text-decoration: underline;
         }
 
         .card-body {
         padding: 20px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.806);
         text-align: center;
 
             .form-group {
@@ -161,7 +226,7 @@ nav {
         }
 
         .card-body2 {
-        background-color: #F4F4F4d4;
+        background-color: #f4f4f4c8;
         text-align: center;
         padding: 20px;
 
@@ -247,7 +312,7 @@ nav {
     margin-top: 20px;
 
     .top-div {
-        background-color: $primary-color;
+        background-color: #34ecbb89;
         color: rgb(0, 0, 0);
         padding: 20px;
         text-align: center;

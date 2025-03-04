@@ -56,7 +56,49 @@ nav .nav-item-div:hover {
   flex: 1;
   margin-top: 20px;
   padding: 20px;
-  background-color: rgb(73, 183, 200);
+  background-color: rgba(119, 174, 213, 0.5019607843);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.container3 {
+  flex: 1;
+  margin-top: 20px;
+  padding: 20px;
+  background-image: url(https://www.liligo.it/magazine-viaggiatore/wp-content/uploads/sites/45/2019/03/Napoli-copertina.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 365px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.container4 {
+  flex: 1;
+  margin-top: 20px;
+  padding: 20px;
+  background-image: url(https://dutchuncles.in/wp-content/uploads/2021/02/How-is-agri-tech-jpg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 365px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.container5 {
+  flex: 1;
+  margin-top: 20px;
+  padding: 20px;
+  background-image: url(https://www.4stars.it/blog/wp-content/uploads/2022/02/CV-PERFETTO-2023.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 365px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: black;
@@ -72,7 +114,8 @@ nav .nav-item-div:hover {
 }
 
 .CV {
-  text-align: center;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px;
   font-size: 3rem;
   font-weight: bold;
@@ -81,6 +124,24 @@ nav .nav-item-div:hover {
   color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #f4f4f4;
+}
+
+.container-wrapper {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  align-items: flex-start;
+  align-items: stretch;
+}
+
+.work-experience {
+  flex: 3;
+}
+
+.skills {
+  flex: 1;
 }
 
 .portfolio {
@@ -88,13 +149,16 @@ nav .nav-item-div:hover {
   margin: 20px;
 }
 
-.job {
+.job1 {
   list-style: none;
   margin: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .job2 {
   list-style: none;
+  margin: 20px;
   text-align: center;
 }
 
@@ -127,18 +191,19 @@ nav .nav-item-div:hover {
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.174);
 }
 .container2 .card .card-header {
-  background-color: #199675;
-  color: rgb(255, 255, 255);
+  background-color: rgba(70, 245, 210, 0.444);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px;
   border-radius: 5px 5px 0 0;
+  text-decoration: underline;
 }
 .container2 .card .card-body {
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.806);
   text-align: center;
 }
 .container2 .card .card-body .form-group {
@@ -146,7 +211,7 @@ nav .nav-item-div:hover {
   margin-bottom: 15px;
 }
 .container2 .card .card-body2 {
-  background-color: rgba(244, 244, 244, 0.831372549);
+  background-color: rgba(244, 244, 244, 0.7843137255);
   text-align: center;
   padding: 20px;
 }
@@ -171,7 +236,7 @@ nav .nav-item-div:hover {
 }
 
 .btn-primary {
-  background-color: #199675;
+  background-color: rgba(119, 174, 213, 0.5019607843);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -224,7 +289,7 @@ nav .nav-item-div:hover {
   margin-top: 20px;
 }
 .main-layout .top-div {
-  background-color: #199675;
+  background-color: rgba(52, 236, 187, 0.537254902);
   color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
@@ -240,7 +305,7 @@ nav .nav-item-div:hover {
 }
 .main-layout .bottom-divs .left-div, .main-layout .bottom-divs .right-div {
   flex: 1;
-  background-color: #199675;
+  background-color: rgba(119, 174, 213, 0.5019607843);
   color: black;
   padding: 20px;
   text-align: center;
