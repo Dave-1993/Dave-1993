@@ -1,7 +1,7 @@
 // Variables
-$primary-color: #77aed580;
+$primary-color: rgba(119, 174, 213, 0.502);
 $secondary-color: #000264;
-$primary-gradient: linear-gradient(45deg, #34ecbbc0, #000264);
+$primary-gradient: linear-gradient(45deg, rgba(52, 236, 187, 0.753), rgb(0, 2, 100));
 $secondary-gradient: linear-gradient(to top, #000264, #34ecbbc0);
 $font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $background-color: #000264;
@@ -59,7 +59,7 @@ nav {
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-            background-color: #199675;
+            background-color: rgb(25, 150, 117);
         }
     }
 }
@@ -72,6 +72,64 @@ nav {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: black;
+}
+
+.container2 {
+    margin-top: 20px;
+    padding: 20px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);;
+
+    .card {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: rgba(255, 255, 255, 0.174);
+
+     .card-header {
+        background-color: rgba(70, 245, 210, 0.444);
+        color: rgb(223, 215, 46);
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        text-decoration: underline;
+        text-shadow: 
+        -1px -1px 0 rgb(0, 0, 0),  
+         1px -1px 0 rgb(0, 0, 0),
+        -1px  1px 0 rgb(0, 0, 0),
+         1px  1px 0 rgb(0, 0, 0);
+        }
+
+        .card-body {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.806);
+        text-align: center;
+
+            .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+            }
+        }
+
+        .card-body2 {
+        background-color: #f4f4f4c8;
+        text-align: center;
+        padding: 20px;
+
+            ul {
+            list-style-type: none;
+            padding-left: 0;
+            }
+
+            li {
+            margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .container3 {
@@ -113,16 +171,7 @@ nav {
     min-height: 365px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: black;
-}
-
-.mx-10 {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: rgb(104, 230, 247);
-    &:hover {
-        color: $secondary-color;
-    }
+    color:  rgb(0, 0, 0);
 }
 
 .CV {
@@ -134,10 +183,40 @@ nav {
     -webkit-background-clip: text;
     background-clip: text; 
     color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    color: $text-color;
+    text-shadow: 2px 2px 4px  rgb(0, 0, 0);
+    color:  rgb(40, 10, 98);
     text-decoration: underline;
-    text-decoration-color: #f4f4f4;
+    text-decoration-color: rgb(40, 10, 98);
+    text-shadow: 
+    -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 rgb(255, 255, 255),
+    -1px  1px 0 rgb(255, 255, 255),
+     1px  1px 0 rgb(255, 255, 255);
+}
+
+.container6 {
+    margin-top: 20px;
+    margin-right: 48%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(4, 24, 106);
+    text-shadow: 
+    -1px -1px 0 rgb(208, 247, 248),  
+     1px -1px 0 rgb(208, 247, 248),
+    -1px  1px 0 rgb(208, 247, 248),
+     1px  1px 0 rgb(208, 247, 248);
+}
+
+
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(104, 230, 247);
+    &:hover {
+        color: $secondary-color;
+    }
 }
 
 .container-wrapper {
@@ -189,65 +268,13 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.container2 {
-    margin-top: 20px;
-    padding: 20px;
-    margin: auto;
-    background-color: transparent;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: rgb(0, 0, 0);
-
-    .card {
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    background-color: rgba(255, 255, 255, 0.174);
-
-     .card-header {
-        background-color: rgba(70, 245, 210, 0.444);
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px 5px 0 0;
-        text-decoration: underline;
-        }
-
-        .card-body {
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.806);
-        text-align: center;
-
-            .form-group {
-            text-align: left;
-            margin-bottom: 15px;
-            }
-        }
-
-        .card-body2 {
-        background-color: #f4f4f4c8;
-        text-align: center;
-        padding: 20px;
-
-            ul {
-            list-style-type: none;
-            padding-left: 0;
-            }
-
-            li {
-            margin-bottom: 10px;
-            }
-        }
-    }
-}
-
 .form-control {
     margin: 10px 0;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+    width: 100%;
 }
 
 .no-resize {
@@ -312,7 +339,7 @@ nav {
     margin-top: 20px;
 
     .top-div {
-        background-color: #34ecbb89;
+        background-color: #23ffc466;
         color: rgb(0, 0, 0);
         padding: 20px;
         text-align: center;
@@ -341,7 +368,7 @@ nav {
         }
     
         .right-div img {
-            max-width: 70%;
+            max-width: 80%;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -370,11 +397,62 @@ nav {
         margin-top: 10px;
     }
 
+    .container3, .container4, .container5 {
+        min-height: 250px;
+    }
+
+    .right-div img {
+        max-width: 80%;
+        height: auto;
+    }
+
     nav.sticky-top {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 1020;
+    }
+
+    .container-wrapper {
+        flex-direction: column;
+    }
+
+    .container-wrapper, .bottom-divs {
+        gap: 10px;
+    }
+    
+    .bottom-divs {
+        flex-direction: column;
+    }
+    
+    .main-layout {
+        grid-template-rows: auto 1fr 1fr;
+    }
+
+    .work-experience,
+    .skills {
+        flex: none;
+        width: 100%;
+    }
+
+    .CV {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        padding: 15px 30px;
+    }
+    .form-control {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .div-footer {
+        padding: 15px 10px;
+        a {
+            font-size: 1.2rem;
+            padding: 8px;
+        }
     }
 }
 
