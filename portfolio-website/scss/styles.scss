@@ -84,7 +84,9 @@ nav {
     color: rgb(0, 0, 0);;
 
     .card {
-    margin: 10px;
+        width: 80%;
+  max-width: 600px; /* evita che diventi troppo grande su schermi larghi */
+  margin: 10px auto;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -92,21 +94,21 @@ nav {
 
      .card-header {
         background-color: rgba(70, 245, 210, 0.444);
-        color: rgb(223, 215, 46);
+        color: rgb(0, 2, 100);
         text-align: center;
         padding: 10px;
         border-radius: 5px 5px 0 0;
         text-decoration: underline;
         text-shadow: 
-        -1px -1px 0 rgb(0, 0, 0),  
-         1px -1px 0 rgb(0, 0, 0),
-        -1px  1px 0 rgb(0, 0, 0),
-         1px  1px 0 rgb(0, 0, 0);
+        -1px -1px 0 rgb(255, 255, 255),  
+         1px -1px 0 rgb(255, 255, 255),
+        -1px  1px 0 rgb(255, 255, 255),
+         1px  1px 0 rgb(255, 255, 255);
         }
 
         .card-body {
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.806);
+        background-color: rgba(255, 255, 255, 0.500);
         text-align: center;
 
             .form-group {
@@ -115,20 +117,6 @@ nav {
             }
         }
 
-        .card-body2 {
-        background-color: #f4f4f4c8;
-        text-align: center;
-        padding: 20px;
-
-            ul {
-            list-style-type: none;
-            padding-left: 0;
-            }
-
-            li {
-            margin-bottom: 10px;
-            }
-        }
     }
 }
 
@@ -149,8 +137,8 @@ nav {
 .container4 {
     flex: 1;
     margin-top: 20px;
-    padding: 20px;
-    background-image: url(https://dutchuncles.in/wp-content/uploads/2021/02/How-is-agri-tech-jpg-1.jpg) ;
+    padding: 0px;
+    background-image: url(https://img77.uenicdn.com/image/upload/v1656007504/business/03a156e1-769f-4e19-b018-27f31ca5c044.jpg) ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -222,9 +210,51 @@ nav {
 .container-wrapper {
     display: flex;
     flex: 1;
-    gap: 20px; 
+    gap: 50px; 
     align-items: flex-start; 
-    align-items: stretch; 
+    align-items: stretch;
+
+     ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;}
+
+    .container-work-experience {
+        flex: 3; 
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+
+    .container-skills {
+
+        flex: 1; 
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        background-color: rgba(102, 229, 246, 0.811);
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+    
+    .job1 {
+        list-style: none;
+        margin: 20px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .job2 {
+        list-style: none;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
 }
 
 .work-experience {
@@ -238,19 +268,6 @@ nav {
 .portfolio {
     text-align: center;
     margin: 20px;
-}
-
-.job1 {
-    list-style: none;
-    margin: 20px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.job2 {
-    list-style: none;
-    margin: 20px;
-    text-align: center;
 }
 
 .custom-hr {
@@ -304,7 +321,7 @@ nav {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 0px;
 
     &:i {
         color: white;
@@ -397,7 +414,7 @@ nav {
         margin-top: 10px;
     }
 
-    .container3, .container4, .container5 {
+    .container3, .container5 {
         min-height: 250px;
     }
 
@@ -426,7 +443,7 @@ nav {
     }
     
     .main-layout {
-        grid-template-rows: auto 1fr 1fr;
+        grid-template-rows: auto 1fr;
     }
 
     .work-experience,
